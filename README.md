@@ -5,6 +5,7 @@
 
 Access to CERN cvmfs is required; this is automatically available with CERNVM installations.
 You should choose an LCG release, e.g. LCG_94
+If you use lxplus, use gpu machine. @lxplus-gpu.cern.ch
 
 ## Installation
 
