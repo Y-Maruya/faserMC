@@ -18,7 +18,9 @@ You should choose an LCG release, e.g. LCG_94
 You will also need to use binaries appropriate for your system configuration. 
 You can leave the sysconfig (2nd) argument to this script blank which will use the default value of "x86_64-slc6-gcc7-opt".
 Note that gcc62 does *not* appear to work with visualization; gcc7 is recommended.
+
 5*) setupATLAS -c slc6
+
 5) source ../faserMC/setupLCG.sh LCG_94 x86_64-slc6-gcc7-opt
  
 6) source ../faserMC/buildFaser.sh
