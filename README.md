@@ -12,14 +12,13 @@ You should choose an LCG release, e.g. LCG_94
 
 1) cd $FASER_ROOT
 2) git clone https://github.com/dwcasper/faserMC
-3) mkdir build
-4) cd build
+3) setupATLAS -c slc6
+4) mkdir build
+5) cd build
 
 You will also need to use binaries appropriate for your system configuration. 
 You can leave the sysconfig (2nd) argument to this script blank which will use the default value of "x86_64-slc6-gcc7-opt".
 Note that gcc62 does *not* appear to work with visualization; gcc7 is recommended.
-
-5*) setupATLAS -c slc6
 
 5) source ../faserMC/setupLCG.sh LCG_94 x86_64-slc6-gcc7-opt
  
@@ -28,7 +27,8 @@ Note that gcc62 does *not* appear to work with visualization; gcc7 is recommende
 The program will be installed in $FASER_ROOT/run
 
 7) cd ../run
-8) bin/faser
+8) export LIBGL_ALWAYS_INDIRECT=1
+9) bin/faser
 
 will launch an interactive session. 
 Use /run/beamOn 1 in the viewer window to generate a single dark photon event at a time.
